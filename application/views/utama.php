@@ -68,7 +68,7 @@
                 <?php
                 foreach ($transportasi as $key => $r) { ?> {
                         "lokasi": [<?= $r->latitudeTransportasi ?>, <?= $r->longitudeTransportasi ?>],
-                        "kecamatan": "<?= $r->provinsiTransportasi ?>",
+                        "Provinsi": "<?= $r->provinsiTransportasi ?>",
                         "keterangan": "<?= $r->keteranganTransportasi ?>",
                         "tempat": "<?= $r->lokasiTransportasi ?>",
                         "kategori": "<?= $r->kategoriTransportasi ?>"
@@ -121,7 +121,7 @@
 
             var icons = "";
             for (i in data) {
-                var kecamatan = data[i].kecamatan;
+                var Provinsi = data[i].Provinsi;
                 var lokasi = data[i].lokasi;
                 var tempat = data[i].tempat;
                 var keterangan = data[i].keterangan;
@@ -136,10 +136,10 @@
                 } 
 
                 var marker = new L.Marker(new L.latLng(lokasi), {
-                    title: kecamatan,
+                    title: Provinsi,
                     icon: icons
                 });
-                marker.bindPopup('<b>Kecamatan: ' + kecamatan + ' <br> Lokasi: ' + tempat + '<br> Keterangan: ' + keterangan + '</b>');
+                marker.bindPopup('<b>Provinsi : ' + Provinsi + ' <br> Lokasi : ' + tempat + '<br> Keterangan : ' + keterangan + '</b>');
                 markersLayer.addLayer(marker);
             }
         </script>
