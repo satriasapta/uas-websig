@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>APLIKASI GIS TRANSPORTASI DARAT</title>
+    <title>SISTEM INFORMASI GIS TRANSPORTASI DARAT</title>
 
     <meta charset="UTF-8">
     <meta name="description" content="Clean and responsive administration panel">
@@ -41,7 +41,7 @@
             <nav uk-navbar>
                 <div class="uk-navbar-left-center-mt-1">
                     <a href="#" class="uk-navbar-item uk-logo">
-                        <h3 style="color: aliceblue;">WEB GIS TRANSPORTASI DARAT</h3>
+                        <h3 style="color: aliceblue;">SISTEM INFORMASI WEB GIS TRANSPORTASI DARAT</h3>
                     </a>
                 </div>
                 <div class="uk-navbar-right">
