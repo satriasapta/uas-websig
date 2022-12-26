@@ -19,7 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 | Please see the user guide for complete details:
 |
-|	https://codeigniter.com/userguide3/general/routing.html
+|	https://codeigniter.com/user_guide/general/routing.html
 |
 | -------------------------------------------------------------------------
 | RESERVED ROUTES
@@ -52,3 +52,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'utama';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+$route['serveradmin'] = 'administrator/index';
+$route['utama'] = 'utama/utama';
+
+$route['proseslogin'] = 'auth/ProsesLogin';
+$route['keluar'] = 'auth/logoutProses';
+$route['login'] = 'auth/index';
+
+$route['transportasi'] = 'administrator/Transportasi';
+$route['tampiltransportasi'] = 'administrator/tampilTransportasi';
+$route['savedatatransportasi'] = 'administrator/saveDataTransportasi';
+$route['editdatatransportasi'] = 'administrator/editDataTransportasi';
+$route['hapustransportasi'] = 'administrator/hapusTransportasi';
+
+$route['tampilusers'] = 'administrator/tampilUsers';
+$route['savedatausers'] = 'administrator/saveDataUsers';
+$route['editdatausers'] = 'administrator/editDataUsers';
+$route['editdatauserspass'] = 'administrator/editDataUsersPass';
+$route['hapususers'] = 'administrator/hapusUsers';

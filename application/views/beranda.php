@@ -57,37 +57,37 @@
         }));
 
         var kereta = L.icon({
-            iconUrl: '<?= base_url('public/icon/train.png') ?>',
-            iconSize: [50, 50]
-        });
+                iconUrl: '<?= base_url('public/icon/train.png') ?>',
+                iconSize: [50,50]
+            });
 
-        var busstop = L.icon({
-            iconUrl: '<?= base_url('public/icon/busstop.png') ?>',
-            iconSize: [50, 50]
-        });
-        var bus = L.icon({
-            iconUrl: '<?= base_url('public/icon/bus.png') ?>',
-            iconSize: [50, 50]
-        });
-
-
+            var busstop = L.icon({
+                iconUrl: '<?= base_url('public/icon/busstop.png') ?>',
+                iconSize: [50,50]
+            });
+            var bus = L.icon({
+                iconUrl: '<?= base_url('public/icon/bus.png') ?>',
+                iconSize: [50,50]
+            });
 
 
-        var icons = "";
-        for (i in data) {
-            var kecamatan = data[i].kecamatan;
-            var lokasi = data[i].lokasi;
-            var tempat = data[i].tempat;
-            var keterangan = data[i].keterangan;
-            var kategori = data[i].kategori;
+           
 
-            if (kategori == "busstop") {
-                icons = busstop;
-            } else if (kategori == "transportasi") {
-                icons = bus;
-            } else if (kategori == "kereta") {
-                icons = kereta;
-            }
+            var icons = "";
+            for (i in data) {
+                var kecamatan = data[i].kecamatan;
+                var lokasi = data[i].lokasi;
+                var tempat = data[i].tempat;
+                var keterangan = data[i].keterangan;
+                var kategori = data[i].kategori;
+
+                if (kategori == "busstop") {
+                    icons = busstop;
+                } else if (kategori == "transportasi") {
+                    icons = bus;
+                } else if (kategori == "kereta") {
+                    icons = kereta;
+                } 
 
             var marker = new L.Marker(new L.latLng(lokasi), {
                 title: kecamatan,

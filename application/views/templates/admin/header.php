@@ -44,7 +44,7 @@
         <div class="uk-container uk-container-expand">
             <nav uk-navbar>
                 <div class="uk-navbar-left">
-                    <a id="sidebar_toggle" class="uk-navbar-toggle" uk-navbar-toggle-icon></a>
+                 
                     <a href="#" class="uk-navbar-item uk-logo">
                         <?= $this->session->userdata('nama') ?>
                     </a>

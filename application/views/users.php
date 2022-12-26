@@ -76,7 +76,6 @@
 				<div class="uk-margin">
 					<label class="uk-form-label" for="form-stacked-text">Status</label>
 					<div class="uk-form-controls">
-						<label><input class="uk-radio" type="radio" value="users" checked name="status" id="users"> Users</label>
 						<label><input class="uk-radio" type="radio" value="admin"  name="status" id="admin"> Admin</label><br>
 					</div>
 				</div>

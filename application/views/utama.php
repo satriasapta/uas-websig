@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>SISTEM INFORMASI GIS TRANSPORTASI DARAT</title>
+    <title>APLIKASI GIS TRANSPORTASI DARAT</title>
 
     <meta charset="UTF-8">
     <meta name="description" content="Clean and responsive administration panel">
@@ -41,7 +41,7 @@
             <nav uk-navbar>
                 <div class="uk-navbar-left-center-mt-1">
                     <a href="#" class="uk-navbar-item uk-logo">
-                        <h3 style="color: aliceblue;">SISTEM INFORMASI WEB GIS TRANSPORTASI DARAT</h3>
+                        <h3 style="color: aliceblue;">WEB GIS TRANSPORTASI DARAT</h3>
                     </a>
                 </div>
                 <div class="uk-navbar-right">
@@ -68,7 +68,7 @@
                 <?php
                 foreach ($transportasi as $key => $r) { ?> {
                         "lokasi": [<?= $r->latitudeTransportasi ?>, <?= $r->longitudeTransportasi ?>],
-                        "Provinsi": "<?= $r->provinsiTransportasi ?>",
+                        "kecamatan": "<?= $r->provinsiTransportasi ?>",
                         "keterangan": "<?= $r->keteranganTransportasi ?>",
                         "tempat": "<?= $r->lokasiTransportasi ?>",
                         "kategori": "<?= $r->kategoriTransportasi ?>"
@@ -121,7 +121,7 @@
 
             var icons = "";
             for (i in data) {
-                var Provinsi = data[i].Provinsi;
+                var kecamatan = data[i].kecamatan;
                 var lokasi = data[i].lokasi;
                 var tempat = data[i].tempat;
                 var keterangan = data[i].keterangan;
@@ -136,10 +136,10 @@
                 } 
 
                 var marker = new L.Marker(new L.latLng(lokasi), {
-                    title: Provinsi,
+                    title: kecamatan,
                     icon: icons
                 });
-                marker.bindPopup('<b>Provinsi : ' + Provinsi + ' <br> Lokasi : ' + tempat + '<br> Keterangan : ' + keterangan + '</b>');
+                marker.bindPopup('<b>Kecamatan: ' + kecamatan + ' <br> Lokasi: ' + tempat + '<br> Keterangan: ' + keterangan + '</b>');
                 markersLayer.addLayer(marker);
             }
         </script>
@@ -171,7 +171,7 @@
                 </header>
                 <div class="uk-comment-body">
                     <b>
-                        <center>SISTEM INFORMASI TRANSPORTASI DARAT</center>
+                        <center>Aplikasi Sistem Transportasi Darat</center>
                     </b>
                 </div>
             </article>

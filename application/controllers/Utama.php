@@ -3,19 +3,26 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Utama extends CI_Controller
 {
-    function __construct()
-    {
-        parent::__construct();
-        $this->load->model('m_model');
-    }
+	function __construct()
+	{
+		parent::__construct();
+		$this->load->model('m_model');
+	}
 
-    public function index()
-    {
-        $data = array(
+	public function index()
+	{
+		$this->load->view('v_default');
+	}
 
-            'transportasi' => $this->m_model->data_transportasi(),
+	public function utama()
+	{
 
-        );
-        $this->load->view('utama', $data, FALSE);
-    }
+
+		$data = array(
+
+			'transportasi' => $this->m_model->data_transportasi(),
+
+		);
+		$this->load->view('utama', $data, FALSE);
+	}
 }

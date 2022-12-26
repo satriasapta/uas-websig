@@ -21,7 +21,7 @@
                 </header>
                 <div class="uk-comment-body">
                     <b>
-                        <center>SISTEM INFORMASI TRANSPORTASI DARAT </center>
+                        <center>Aplikasi Sistem Transportasi Darat</center>
                     </b>
                 </div>
             </article>
