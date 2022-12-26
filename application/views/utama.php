@@ -171,7 +171,7 @@
                 </header>
                 <div class="uk-comment-body">
                     <b>
-                        <center>Aplikasi Sistem Transportasi Darat</center>
+                        <center>SISTEM INFORMASI TRANSPORTASI DARAT</center>
                     </b>
                 </div>
             </article>
